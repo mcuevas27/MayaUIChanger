@@ -1,0 +1,124 @@
+/* Global Reset */
+QWidget {
+    background-color: #fffaf5; /* Creamy White */
+    color: #4a4a4a; /* Soft Charcoal */
+    font-family: 'Chicago', 'Charcoal', 'Geneva', 'MS Sans Serif', 'Tahoma', sans-serif;
+    font-size: 9pt;
+}
+
+/* Main Window */
+QMainWindow, QDialog {
+    background-color: #fffaf5;
+}
+
+/* Group Boxes */
+QGroupBox {
+    background-color: #ffffff;
+    border: 2px solid #ffb7b2; /* Soft Pink Border */
+    border-radius: 10px;
+    margin-top: 1.5em;
+    padding: 15px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    left: 15px;
+    padding: 0 5px;
+    background-color: transparent;
+    color: #ff8e88; /* Slightly darker pink text */
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Line Edits */
+QLineEdit {
+    background-color: #ffffff;
+    color: #555;
+    border: 2px solid #c7ceea; /* Periwinkle Blue */
+    border-radius: 6px;
+    padding: 6px;
+    selection-background-color: #c7ceea;
+    selection-color: #fff;
+}
+
+QLineEdit:focus {
+    border: 2px solid #ffb7b2; /* Pink focus */
+}
+
+/* Buttons */
+QPushButton {
+    background-color: #b5e8d5; /* Mint Green */
+    color: #4a4a4a;
+    border: 2px solid #98d6c0; /* Darker Mint Border */
+    border-radius: 12px; /* Very rounded */
+    padding: 8px 16px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #c6f0e0; /* Lighter mint */
+    margin-top: 2px; /* Subtle 'press' hint */
+}
+
+QPushButton:pressed {
+    background-color: #98d6c0;
+    margin-top: 4px;
+}
+
+QPushButton:disabled {
+    background-color: #f0f0f0;
+    border-color: #e0e0e0;
+    color: #a0a0a0;
+}
+
+/* List Widget - Sidebar */
+QListWidget {
+    background-color: #fff1e6; /* Soft Peach */
+    border-right: 2px solid #ffdec4;
+    outline: none;
+}
+
+QListWidget::item {
+    padding: 12px 15px;
+    color: #6d6d6d;
+    border-bottom: 1px solid #ffead6;
+}
+
+QListWidget::item:selected {
+    background-color: #e2f0cb; /* Pastel Lime/Green */
+    color: #556b2f;
+    border-left: 4px solid #b5e8d5;
+}
+
+QListWidget::item:hover:!selected {
+    background-color: #fff6ee;
+}
+
+/* Radio Buttons */
+QRadioButton {
+    spacing: 6px;
+}
+QRadioButton::indicator {
+    width: 14px;
+    height: 14px;
+    border: 2px solid #c7ceea;
+    border-radius: 8px;
+    background-color: #fff;
+}
+QRadioButton::indicator:checked {
+    background-color: #c7ceea; /* Periwinkle fill */
+    border: 2px solid #c7ceea;
+}
+
+/* Scrollbars */
+QScrollBar:vertical {
+    border: none;
+    background: #fdf6e3;
+    width: 12px;
+}
+QScrollBar::handle:vertical {
+    background: #ffdac1; /* Peach */
+    border-radius: 6px;
+    min-height: 20px;
+}
